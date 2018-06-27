@@ -1,0 +1,8 @@
+DROP table images;
+
+CREATE TABLE images (
+  ID INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+  filename VARCHAR(128) NOT NULL,
+  content_type VARCHAR(128) NOT NULL,
+  content blob);
+
